@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+	<div>
+		<p> first p1 </p>
+		<p> first p2 </p>
+		<p> first p3 </p>
+		<p> first p4 </p>
+		<p> first p5 </p>
+	</div>
+
+	<button>
+		click me
+	</button>
+
+
+	<!-- <div>
+		<p> first p1 </p>
+		<p> first p2 </p>
+		<p> first p3 </p>
+		<p> first p4 </p>
+		<p> first p5 </p>
+	</div>
+
+
+	<div>
+		<p> first p1 </p>
+		<p> first p2 </p>
+		<p> first p3 </p>
+		<p> first p4 </p>
+		<p> first p5 </p>
+	</div> -->
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			$('button').click(function () {
+
+				// $('p').css("color","red");
+
+				// $('p').first().css("background","lightblue");
+
+				//$('p').last().css("background","lightblue");
+				$('p').eq(3).css("background","lightblue");
+
+
+			})
+		})
+		
+	</script>
+
+</body>
+</html>

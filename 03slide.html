@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+
+        .panel
+        {
+            background: lightblue;
+            border: 2px solid;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .panel-info
+        {
+            background: lightblue;
+            border: 2px solid;
+            font-size: 24px;
+        
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="panel">click panel</div>
+<div class="panel-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nostrum aperiam deserunt similique, incidunt aut voluptates optio, veritatis ipsam recusandae earum cupiditate placeat maxime harum beatae, accusamus facilis facere doloremque?</div>
+
+    <script>
+
+        $(document).ready(function (){
+
+            // $('.panel').click(function (){
+
+            //     $('.panel-info').slideUp();
+            // })
+
+            // $('.panel').click(function (){
+
+            // $('.panel-info').slideDown();
+            // })
+
+            $('.panel').click(function (){
+
+            $('.panel-info').slideToggle(1000);
+            })
+
+            
+        })
+
+
+    </script>
+</body>
+</html>

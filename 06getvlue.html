@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   
+</head>
+<body>
+   
+
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facilis itaque aut. Cum esse veritatis nihil <b>sdfhlskifsdifusdfisdufo</b>ex officiis! Inventore quis nemo eveniet voluptatum eligendi tenetur incidunt quasi aliquam in obcaecati?
+    </p>
+
+    <input type="text" name="" id="i1">
+
+    <button class="b1">P tag</button>
+    <button class="b2">Input Tag</button>
+    <button class="b3">GET HTML Tag</button>
+  
+
+    <script>
+    
+
+    $(document).ready(function (){
+
+        $('.b1').click(function (){
+
+            var p_tag = $('p');
+
+            // alert($('p').text());
+
+            alert(p_tag.text())
+
+        })
+
+        $('.b2').click(function(){
+
+           var inp_tag =  $('#i1');
+          alert(inp_tag.val()) ;
+
+        })
+
+        $('.b3').click(function(){
+
+        var p_tag =  $('p');
+        alert(p_tag.html()) ;
+
+        })
+
+    })
+
+       
+    
+
+
+    </script>
+    
+</body>
+</html>
